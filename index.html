@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css files  -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Select Best Five</title>
+  </head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <div>
+        <h1>Select Best Five</h1>
+        <p>
+          Select best five players for your team. Take them to next world cup mission. 
+        </p>
+      </div>
+    </header>
+    <!-- main section -->
+    <main >
+      <!-- player section  -->
+        <section class="player-container">
+      <div class="player">
+        <img src="img/player-1.jpg" alt="player-1" />
+        <div class="player-details">
+          <h2 id="player-1">Kaka</h2>
+          <p><span>36 Goals</span> . <span>120 Assist</span></p>
+          <button type="submit" id="btn-player1">Select</button>
+        </div>
+      </div>
+      <div class="player">
+        <img src="img/player-2.jpg" alt="kaka" />
+        <div class="player-details">
+          <h2 id="player-2">Neymar</h2>
+          <p><span>36 Goals</span> . <span>120 Assist</span></p>
+          <button type="submit" id="btn-player2">Select</button>
+        </div>
+      </div>
+      <div class="player">
+        <img src="img/player-3.webp" alt="kaka" />
+        <div class="player-details">
+          <h2 id="player-3">Ronaldo</h2>
+          <p><span>36 Goals</span> . <span>120 Assist</span></p>
+          <button type="submit" id="btn-player3">Select</button>
+        </div>
+      </div>
+      <div class="player">
+        <img src="img/player-4.jpg" alt="kaka" />
+        <div class="player-details">
+          <h2 id="player-4">Messi</h2>
+          <p><span>36 Goals</span> . <span>120 Assist</span></p>
+          <button type="submit" id="btn-player4">Select</button>
+        </div>
+      </div>
+      <div class="player">
+        <img src="img/player-5.jpg" alt="kaka" />
+        <div class="player-details">
+          <h2 id="player-5">Salah</h2>
+          <p><span>36 Goals</span> . <span>120 Assist</span></p>
+          <button type="submit" id="btn-player5">Select</button>
+        </div>
+      </div>
+      <div class="player">
+        <img src="img/player-6.jfif" alt="kaka" />
+        <div class="player-details">
+          <h2 id="player-6">Sadio Mane</h2>
+          <p><span>36 Goals</span> . <span>120 Assist</span></p>
+          <button type="submit" id="btn-player6">Select</button>
+        </div>
+      </div>
+    </section>
+    <!-- calculation section  -->
+      <section class="calculation-container">
+        <div class="player-list-container">
+          <h2>Select V</h2>
+          <ol class="player-list" id="player-list">
+        
+           
+          </ol>
+        </div>
+        <div class="budget">
+          <h2>Budget</h2>
+          <div>
+            <label for="per-player-cost">Per Player</label>
+            <input type="text" class="player-input" id="per-player-cost" />
+          </div>
+          <button type="submit" id="btn-calculate">Calculate</button>
+
+          <h3 class="player-expenses">Player Expenses $<span id="player-expenses">00</span></h3>
+          <div>
+            <label for="manager-cost">Manager</label>
+            <input type="text" class="player-input" id="manager-cost" />
+          </div>
+          <div>
+            <label for="coach-cost">Coach</label>
+            <input type="text" class="player-input" id="coach-cost" />
+          </div>
+          <button type="submit" id="btn-calculate-total">
+            Calculate Total
+          </button>
+          <h3 class="total-expenses">
+            Total Expenses $<span id="total-expenses" style="color: coral">00</span>
+          </h3>
+        </div>
+    </section>
+    </main>
+    <!-- script tags -->
+    <script src="js/utilities.js"></script>
+    <script src="js/players.js"></script>
+  </body>
+</html>
